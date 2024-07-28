@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.date {
+    font-size: 10px;
+}
+
+.title {
+    font: size 15px;
+}
+
+.paragraph {
+    font-size: 10px;
+}
