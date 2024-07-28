@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-header {
+.content {
     max-width: 960px;
     background-color: #eeeeee;
     padding: 50px 20px;
@@ -21,6 +21,10 @@ h1 {
         flex-direction: column;
         row-gap: 20px;
     } */
+}
+
+li {
+    list-style: none;
 }
 
 .box1 {
