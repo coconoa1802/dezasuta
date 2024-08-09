@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* header */
+
+.header_inner {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7.29%;
+    padding-left: 2.7%;
+    position: absolute;
+    width: 100%;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 70px;
+}
+
+.header_nav li {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.logo {
+    width: 227px;
+}
+
+/* コンテンツ 共通 */
+
+.backgroundcolor {
+    background-color: #e8d9bf;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    height: 78px;
+    width: auto;
+}
+
+/* キャッチコピー */
+
+.catchcopy {
+    text-align: center;
+}
+
+.topmessage {
+    font-size: 30px;
+    padding-top: 103px;
+    padding-bottom: 50px;
+}
+
+.mainmessage {
+    font-size: 82px;
+    line-height: 1.17;
+    letter-spacing: 0.1em;
+}
+
+.bottommessage {
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 0.1em;
+    padding-top: 45px;
+    padding-bottom: 92px;
+}
+
+/* aboutus */
+
+#aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 105px;
+}
+
+.aboutus_img_box {
+    padding-right: 60px;
+}
+
+.aboutus_img {
+    width: 500px;
+    height: 560px;
+    border-bottom-right-radius: 50px;
+}
+
+.message {
+    font-size: 44px;
+    line-height: 1.38;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.submessage {
+    font-size: 16px;
+    line-height: 1.62;
+    width: 410px;
+    text-align: justify;
+}
+
+/* menu */
+
+#menu {
+    padding-bottom: 105px;
+}
+
+.menuinner_ul {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.menuinner_ul img {
+    border-top-right-radius: 50px;
+}
+
+.menuinner_ul li {
+    width: 300px;
+}
+
+.menu_category {
+    font-size: 38px;
+    color: #d30202;
+    padding-bottom: 10px;
+    padding-left: 3.3%;
+    margin-top: -20px;
+}
+
+.menu_text {
+    font-size: 17px;
+    line-height: 1.47;
+    text-align: justify;
+
+    /* ★文字幅が枠いっぱいにならない */
+}
+
+/* gallery */
+#gallery {
+    margin-bottom: 70px;
+}
+
+#gallery > img {
+    margin-bottom: 25px;
+}
+
+.gallery_img {
+    display: flex;
+    width: 20%;
+}
+
+/* event */
+
+#event {
+    margin-bottom: 75px;
+}
+
+#event > img {
+    margin-bottom: 40px;
+}
+
+.event_inner {
+    background-color: #fff;
+    border: solid 3.5px #4f260b;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event_inner li {
+    display: flex;
+    margin: 15px 200px;
+}
+
+.event_inner p {
+    padding-right: 75px;
+}
+
+.event_inner a {
+    text-decoration: underline;
+}
+
+/* access */
+
+#access > img {
+    margin-bottom: 40px;
+}
+
+.map {
+    width: 100%;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+/* footer */
+
+footer {
+    background-color: #fff;
+    height: 392px;
+    padding-top: 80px;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+.footer_inner {
+    padding-left: 23.9%;
+    display: flex;
+}
+
+.information {
+    font-size: 20px;
+    line-height: 1.95;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.fixed_button {
+    position: fixed;
+    height: 125px;
+    width: auto;
+    right: 100px;
+    bottom: 100px;
+}
