@@ -244,3 +244,312 @@ footer img {
     bottom: 100px;
     z-index: 9999;
 }
+
+.hamburger,
+.header-nav-sp,
+.bottommessage-sp,
+#aboutus-sp,
+#menu-sp,
+#gallery-sp,
+#event-sp,
+#access-sp,
+.footer-sp {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .header_nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .hamburger span {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        top: 13px;
+        transition: 0.3s;
+    }
+    .hamburger span::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        top: -13px;
+        transition: 0.3s;
+    }
+    .hamburger span::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        bottom: -13px;
+        transition: 0.3s;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    .header-nav-sp {
+        position: absolute;
+        background-color: #000000c4;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header-nav-sp ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .header-nav-sp li {
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .topmessage {
+        font-size: 25px;
+    }
+
+    .mainmessage {
+        font-size: 50px;
+    }
+
+    .bottommessage {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* 共通 */
+    .title-sp {
+        height: 45px;
+        width: auto;
+    }
+
+    /* コンセプト */
+
+    .bottommessage {
+        display: none;
+    }
+
+    .bottommessage-sp {
+        display: block;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.1em;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    /* aboutus */
+
+    #aboutus {
+        display: none;
+    }
+
+    #aboutus-sp {
+        display: block;
+    }
+
+    .about_us_img_sp {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+
+    .message-sp {
+        font-size: 36px;
+        line-height: 1.25;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .submessage-sp {
+        font: size 16px;
+        line-height: 1.75;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    /* menu */
+    #menu {
+        display: none;
+    }
+
+    #menu-sp {
+        display: block;
+    }
+
+    .menuinner_ul_sp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 25px;
+        gap: 40px;
+        width: 300px;
+        margin: 0 auto;
+        padding-bottom: 90px;
+    }
+
+    .menuinner_ul_sp img {
+        width: 300px;
+        height: 200px;
+        border-top-right-radius: 50px;
+    }
+
+    .menu_category_sp {
+        color: #d30202;
+        font-size: 40px;
+        text-align: left;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+
+    .menu_text_sp {
+        font-size: 17px;
+        line-height: 1.47;
+        text-align: left;
+        /* text-align: justify; */
+        padding-top: 15px;
+        /* padding-left: 20px; */
+    }
+
+    /* gallery */
+    #gallery {
+        display: none;
+    }
+
+    #gallery-sp {
+        display: block;
+    }
+
+    .gallery_img_sp {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    /* event */
+    #event {
+        display: none;
+    }
+
+    #event-sp {
+        display: block;
+        margin: 0 5%;
+    }
+
+    .event_inner_sp {
+        background-color: #fff;
+        border: solid 3.5px #4f260b;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .event_inner_sp li {
+        font-size: 16px;
+        width: 100%;
+        padding: 0 10%;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .event_inner_sp a {
+        text-decoration: underline;
+    }
+
+    /* access */
+    #access {
+        display: none;
+    }
+
+    #access-sp {
+        display: block;
+    }
+
+    #access-sp > img {
+        margin-bottom: 10px;
+    }
+
+    .map-sp {
+        width: 100%;
+        filter: grayscale(100%) invert(92%) contrast(83%);
+    }
+
+    /* footer */
+
+    .footer_inner {
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: #fff;
+        height: 320px;
+    }
+
+    footer img {
+        height: auto;
+        width: 226px;
+        margin: 0 60px;
+    }
+
+    .footer_sp {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .information {
+        font-size: 18px;
+        line-height: 1.72;
+        text-align: left;
+        padding-top: 35px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .fixed_button {
+        height: 100px;
+        width: auto;
+        right: 50px;
+        bottom: 200px;
+    }
+}

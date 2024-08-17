@@ -7,6 +7,7 @@
   <title>デザインカフェ</title>
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,8 +38,37 @@
       </nav>
     </div>
 
+    <div class="hamburger">
+      <span></span>
+    </div>
+
+    <nav class="header-nav-sp">
+      <ul>
+        <li>
+          <a href="#aboutus">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#menu">MENU</a>
+        </li>
+        <li>
+          <a href="#gallery">GALLERY</a>
+        </li>
+        <li>
+          <a href="#event">EVENT</a>
+        </li>
+        <li>
+          <a href="#access">ACCESS</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
     <div class="slider">
-      <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子" />
+      <picture>
+        <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)" />
+        <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子" />
+      </picture>
     </div>
   </header>
 
@@ -56,6 +86,10 @@
         毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
         足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
       </p>
+      <p class="bottommessage-sp">
+        毎日を丁寧に大切に過ごしたい。<br>だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+        足を運んでくれるお客さんには落ち着く空間と<br>こだわりのコーヒーを提供したい。
+      </p>
     </div>
 
     <section id="aboutus" class="wrapper">
@@ -68,6 +102,18 @@
         <p class="submessage">
           サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
         </p>
+      </div>
+    </section>
+
+    <section id="aboutus-sp">
+      <div>
+        <img class="title-sp" src="./images/about_us@2x.png" alt="aboutus">
+      </div>
+      <img class="about_us_img_sp" src="./images/cake_sp@2x-100.jpg" alt="チーズケーキ">
+      <div>
+        <p class="message-sp">私たちが提供する<br />こだわりのコーヒー</p>
+        <p class="submessage-sp">
+          サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
       </div>
     </section>
 
@@ -98,6 +144,33 @@
       </ul>
     </section>
 
+    <section id="menu-sp">
+      <img class="title-sp" src="./images/menu@2x.png" alt="menu" />
+      <ul class="menuinner_ul_sp">
+        <li>
+          <img src="./images/pc_menu_drink-100.jpg" alt="ドリンク" />
+          <p class="menu_category_sp">Drink</p>
+          <p class="menu_text_sp">
+            ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+          </p>
+        </li>
+        <li>
+          <img src="./images/pc_menu_food-100.jpg" alt="フード" />
+          <p class="menu_category_sp">Food</p>
+          <p class="menu_text_sp">
+            フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+          </p>
+        </li>
+        <li>
+          <img src="./images/pc_menu_sweets-100.jpg" alt="スイーツ" />
+          <p class="menu_category_sp">Sweets</p>
+          <p class="menu_text_sp">
+            スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+          </p>
+        </li>
+      </ul>
+    </section>
+
     <section id="gallery">
       <img class="title" src="./images/gallery@2x.png" alt="gallery" />
       <div class="gallery_img">
@@ -106,6 +179,17 @@
         <img src="./images/pc_gallary_03-100.jpg" alt="カフェ店内の様子" />
         <img src="./images/pc_gallary_02-100.jpg" alt="看板" />
         <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" />
+      </div>
+    </section>
+
+    <section id="gallery-sp">
+      <img class="title-sp" src="./images/gallery@2x.png" alt="gallery" />
+      <div class="gallery_img_sp">
+        <!-- <img src="./images/pc_gallary_05-100.jpg" alt="店内の様子" />
+        <img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" /> -->
+        <img src="./images/pc_gallary_03-100.jpg" alt="カフェ店内の様子" />
+        <!-- <img src="./images/pc_gallary_02-100.jpg" alt="看板" />
+        <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" /> -->
       </div>
     </section>
 
@@ -127,10 +211,39 @@
       </ul>
     </section>
 
+    <section id="event-sp">
+      <img class="title-sp" src="./images/event@2x.png" alt="event" />
+      <ul class="event_inner_sp">
+        <li>
+          <p class="date-sp">2020.06.23</p>
+          <a class="event_title_sp" href="">7月はイベント出店のため0/0お休みします</a>
+        </li>
+        <li>
+          <p class="date-sp">2020.03.15</p>
+          <a class="event_title_sp" href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+        </li>
+        <li>
+          <p class="date-sp">2020.02.06</p>
+          <a class="event_title_sp" href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
+        </li>
+      </ul>
+    </section>
+
     <section id="access">
       <img class="title" src="./images/access@2x.png" alt="access" />
       <div>
         <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410253173!2d2.291906376348587!3d48.858373600707786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z44Ko44OD44OV44Kn44Or5aGU!5e0!3m2!1sja!2sjp!4v1723036718436!5m2!1sja!2sjp"
+          width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="access-sp">
+      <img class="title-sp" src="./images/access@2x.png" alt="access" />
+      <div>
+        <iframe class="map-sp"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410253173!2d2.291906376348587!3d48.858373600707786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z44Ko44OD44OV44Kn44Or5aGU!5e0!3m2!1sja!2sjp!4v1723036718436!5m2!1sja!2sjp"
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -149,10 +262,18 @@
         </div>
       </div>
       <p class="copyright">© 2021 DESIGN CAFE</p>
-
-
     </footer>
   </div>
+
+  <script>
+    $(function () {
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open")
+        $(".header-nav-sp").fadeToggle();
+      });
+    });
+  </script>
+
 </body>
 
 </html>
