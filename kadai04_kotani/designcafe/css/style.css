@@ -356,6 +356,12 @@ footer img {
 
     /* コンセプト */
 
+    .mainmessage {
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: 0.2em;
+    }
+
     .bottommessage {
         display: none;
     }
@@ -415,15 +421,17 @@ footer img {
         align-items: center;
         flex-direction: column;
         padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
         gap: 40px;
-        width: 300px;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 90px;
     }
 
     .menuinner_ul_sp img {
-        width: 300px;
-        height: 200px;
+        /* width: 300px;
+        height: 200px; */
         border-top-right-radius: 50px;
     }
 
@@ -549,7 +557,7 @@ footer img {
     .fixed_button {
         height: 100px;
         width: auto;
-        right: 50px;
-        bottom: 200px;
+        right: 10px;
+        bottom: 10px;
     }
 }
