@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>デザインカフェ</title>
   <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.css" />
+  <link href="./css/lightbox.min.css" rel="stylesheet">
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -68,6 +74,10 @@
       <picture>
         <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)" />
         <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子" />
+      </picture>
+      <picture>
+        <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)" />
+        <img src="./images/slider_2.jpg" alt="カフェ店内の様子" />
       </picture>
     </div>
   </header>
@@ -174,22 +184,35 @@
     <section id="gallery">
       <img class="title" src="./images/gallery@2x.png" alt="gallery" />
       <div class="gallery_img">
-        <img src="./images/pc_gallary_05-100.jpg" alt="店内の様子" />
+        <!-- <img src="./images/pc_gallary_05-100.jpg" alt="店内の様子" />
         <img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" />
         <img src="./images/pc_gallary_03-100.jpg" alt="カフェ店内の様子" />
         <img src="./images/pc_gallary_02-100.jpg" alt="看板" />
         <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" />
+        <img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" /> -->
+        <a href="./images/pc_gallary_05-100.jpg" data-lightbox="image-set"><img src="./images/pc_gallary_05-100.jpg"
+            alt="店内の様子"></a>
+        <a href="./images/pc_gallary_04-100.jpg" data-lightbox="image-set"><img src="./images/pc_gallary_04-100.jpg"
+            alt="コーヒー豆"></a>
+        <a href="./images/pc_gallary_03-100.jpg" data-lightbox="image-set"> <img src="./images/pc_gallary_03-100.jpg"
+            alt="カフェ店内の様子" /></a>
+        <a href="./images/pc_gallary_02-100.jpg" data-lightbox="image-set"><img src="./images/pc_gallary_02-100.jpg"
+            alt="看板"></a>
+        <a href="./images/pc_gallary_01-100.jpg" data-lightbox="image-set"><img src="./images/pc_gallary_01-100.jpg"
+            alt="ラテアート"></a>
+        <a href="./images/pc_gallary_04-100.jpg" data-lightbox="image-set"><img src="./images/pc_gallary_04-100.jpg"
+            alt="コーヒー豆"></a>
       </div>
     </section>
 
     <section id="gallery-sp">
       <img class="title-sp" src="./images/gallery@2x.png" alt="gallery" />
       <div class="gallery_img_sp">
-        <!-- <img src="./images/pc_gallary_05-100.jpg" alt="店内の様子" />
-        <img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" /> -->
+        <img src="./images/pc_gallary_05-100.jpg" alt="店内の様子" />
+        <img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" />
         <img src="./images/pc_gallary_03-100.jpg" alt="カフェ店内の様子" />
-        <!-- <img src="./images/pc_gallary_02-100.jpg" alt="看板" />
-        <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" /> -->
+        <img src="./images/pc_gallary_02-100.jpg" alt="看板" />
+        <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" />
       </div>
     </section>
 
@@ -272,7 +295,35 @@
         $(".header-nav-sp").fadeToggle();
       });
     });
+    $(function () {
+      $(".slider").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true
+      });
+    });
+    $(function () {
+      $(".gallery_img").slick({
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1, // 一枚ずつ表示切替
+      })
+    });
+
+    $(function () {
+      $(".gallery_img_sp").slick({
+        arrows: false,
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      })
+    });
   </script>
+
 
 </body>
 
