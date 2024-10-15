@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+.title_icons {
+    position: absolute;
+    top: 68px;
+    left: 100px;
+    text-align: center;
+}
+
+.titlenumber {
+    font-size: 40px;
+}
+
+.border {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-style: solid;
+    size: 1.42;
+    width: 24px;
+    color: #1c144d;
+}
+
+.title {
+    font-size: 28px;
+    letter-spacing: 0.03em;
+}
+
+/* header */
+header {
+    padding: 50px 10px;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 9997;
+}
+
+.logo {
+    width: 68px;
+    margin-left: 90px;
+    margin-bottom: 38px;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 35px;
+    margin-left: 65px;
+}
+
+.header_nav li {
+    font-size: 16px;
+    font-family: "Minion Variable Concept";
+}
+
+.box {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 88px;
+    width: 1150px;
+    height: 613px;
+    background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
+}
+
+.catchcopy {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-size: 50px;
+    line-height: 1.56;
+    letter-spacing: 0.1em;
+    padding-top: 83px;
+    padding-left: 890px;
+}
+
+.catchcopy_sub {
+    font-size: 15px;
+    line-height: 3.33;
+    letter-spacing: 0.1em;
+    padding-left: 90px;
+    padding-bottom: 75px;
+}
+
+/* profile */
+#profile {
+    position: relative;
+}
+
+.profile_pic {
+    display: flex;
+}
+
+.profile_picture {
+    margin-top: 283px;
+    width: 635px;
+    position: absolute;
+    z-index: 1;
+}
+
+.profile_box {
+    padding-top: 138px;
+    position: relative;
+    margin-left: 490px;
+}
+
+.profile_box_top {
+    width: 846px;
+    margin-left: auto;
+}
+
+.profile_box_middle {
+    width: 846px;
+    height: 620px;
+    background-color: #c7d0d5;
+    margin-left: auto;
+}
+
+.profile_box_bottom {
+    width: 846px;
+    margin-left: auto;
+    margin-bottom: 106px;
+}
+
+.webdesigner {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding-top: 110px;
+    margin-left: 222px;
+}
+
+.name {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    padding-top: 40px;
+    margin-left: 222px;
+}
+
+.name_kanji {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    padding-top: 40px;
+    margin-left: 222px;
+}
+
+.profile_detail {
+    font-size: 14px;
+    line-height: 2.643;
+    width: 531px;
+    padding-top: 68px;
+    margin-left: 222px;
+}
+
+/* servise */
+
+#servise {
+    position: relative;
+}
+
+.skill {
+    display: flex;
+    padding-top: 302px;
+    padding-left: 224px;
+    padding-right: 224px;
+    padding-bottom: 215px;
+    text-align: center;
+}
+
+.skill_en {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+}
+
+.skill_ja {
+    font-size: 20px;
+    margin-top: 38px;
+}
+
+.skill_pic {
+    width: 365px;
+    height: 241px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.skill_detail {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.85;
+    margin-top: 53px;
+    word-wrap: anywhere;
+}
+
+/* works */
+
+#works {
+    position: relative;
+}
+
+.works {
+    width: 100%;
+    height: auto;
+    margin-top: 68px;
+}
+
+.works_contents {
+    display: flex;
+    /* width: max-content; */
+    flex-wrap: wrap;
+    margin-top: 232px;
+    margin-left: 198px;
+}
+
+.works_contents_item {
+    width: 34%;
+}
+
+/* contact */
+
+#contact {
+    position: relative;
+}
+
+.contact_box {
+    margin-top: 50px;
+    margin-left: 243px;
+    width: 980px;
+    height: 523px;
+    background: linear-gradient(to bottom, #a3b8c4, #cdcdcf, #8082a3);
+}
+
+.contact_detail {
+    font-size: 16px;
+    line-height: 2.75;
+    letter-spacing: 0.1em;
+    padding-top: 123px;
+    padding-left: 288px;
+}
+
+.contact_button_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact_button_area {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin-left: 288px;
+    margin-top: 70px;
+    width: 100%;
+    height: 105px;
+    z-index: 9999;
+}
+
+.contact_button {
+    font-size: 20px;
+    line-height: 2.2;
+    letter-spacing: 0.1em;
+    margin-left: 187px;
+    padding-right: 230px;
+}
+
+.footer {
+    margin-top: 225px;
+    /* width: max-content; */
+}
+
+.footer_img {
+    width: 100%;
+    height: auto;
+}
+
+.footer_name {
+    color: #ffffff;
+    z-index: 9996;
+}
+
+.footer_menu {
+    color: #ffffff;
+    z-index: 9995;
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.title_icons {
+    position: absolute;
+    top: 68px;
+    left: 100px;
+    text-align: center;
+}
+
+/* header */
+header {
+    padding: 50px 10px;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 9997;
+}
+
+.logo {
+    width: 68px;
+    margin-left: 90px;
+    margin-bottom: 38px;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 35px;
+    margin-left: 65px;
+}
+
+.header_nav li {
+    font-size: 16px;
+    font-family: "Minion Variable Concept";
+}
+
+.profile_top_img {
+    max-width: auto;
+    margin: 0, 410, 0, 160;
+}
