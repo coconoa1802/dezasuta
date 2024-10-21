@@ -91,6 +91,9 @@ header {
 }
 
 .line {
+    position: absolute;
+    top: 0;
+    right: 3%;
     display: flex;
     column-gap: 13px;
     writing-mode: vertical-rl;
@@ -130,7 +133,6 @@ header {
     margin-left: 490px; */
 }
 
-/* Edited:  */
 .profile__bg {
     position: absolute;
     width: 63%;
@@ -168,7 +170,6 @@ header {
     margin-bottom: 106px;
 } */
 
-/* Edited:  */
 .webdesigner {
     font-size: 18px;
     letter-spacing: 0.1em;
@@ -176,7 +177,6 @@ header {
     /* margin-left: 222px; */
 }
 
-/* Edited:  */
 .name {
     /* font-size: 36px;
   letter-spacing: 0.1em;
@@ -187,7 +187,6 @@ header {
     padding-top: 40px;
 }
 
-/* Edited:  */
 .name_kanji {
     font-size: 20px;
     letter-spacing: 0.1em;
@@ -195,7 +194,6 @@ header {
     /* margin-left: 222px; */
 }
 
-/* Edited:  */
 .profile_detail {
     font-size: 14px;
     line-height: 2.643;
@@ -314,7 +312,6 @@ header {
     position: relative;
 }
 
-/* Edited:  */
 .contact_box {
     display: flex;
     flex-direction: column;
@@ -390,7 +387,6 @@ header {
     }
 }
 
-/* Edited:  */
 .footer__inner {
     max-width: 1100px;
     margin: 0 auto;
