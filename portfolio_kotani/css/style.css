@@ -3,10 +3,12 @@
 /* 共通 */
 
 .title_icons {
-    position: absolute;
+    /* position: absolute;
     top: 68px;
-    left: 100px;
+    left: 100px; */
     text-align: center;
+    display: inline-block;
+    margin-left: 13%;
 }
 
 .titlenumber {
@@ -28,22 +30,25 @@
 }
 
 /* header */
+
 header {
-    padding: 50px 10px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 75px 10px 0;
 }
 
 .header_inner {
     display: flex;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    z-index: 9997;
+    /* z-index: 9997; */
 }
 
 .logo {
     width: 68px;
-    margin-left: 90px;
-    margin-bottom: 38px;
+    /* margin-left: 90px;
+    margin-bottom: 38px; */
 }
 
 .header_nav ul {
@@ -61,7 +66,7 @@ header {
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 88px;
-    width: 1150px;
+    max-width: 1150px;
     height: 613px;
     background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
 }
@@ -73,7 +78,8 @@ header {
     line-height: 1.56;
     letter-spacing: 0.1em;
     padding-top: 83px;
-    padding-left: 890px;
+    padding-right: 120px;
+    margin-left: auto;
 }
 
 .catchcopy_sub {
@@ -85,7 +91,10 @@ header {
 }
 
 .line {
-    /* 縦にするには？ */
+    display: flex;
+    column-gap: 13px;
+    writing-mode: vertical-rl;
+    align-items: center;
 }
 
 .portfoliosite {
@@ -100,66 +109,99 @@ header {
 
 .profile_pic {
     display: flex;
+    align-items: center;
+    margin: 220px 0 300px;
+    position: relative;
 }
 
 .profile_picture {
-    margin-top: 283px;
-    width: 635px;
+    /* margin-top: 283px; */
+    width: 55%;
+    /* width: 635px;
     position: absolute;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .profile_box {
-    padding-top: 138px;
+    width: 45%;
+    padding-left: 5%;
+    /* padding-top: 138px;
     position: relative;
-    margin-left: 490px;
+    margin-left: 490px; */
 }
 
-.profile_box_top {
+/* Edited:  */
+.profile__bg {
+    position: absolute;
+    width: 63%;
+    height: calc(100% + 95px + 80px);
+    right: 0;
+    top: -80px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-color {
+    content: "";
+    background-color: #c7d0d5;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+/* .profile_box_top {
     width: 846px;
     margin-left: auto;
-}
+} */
 
 .profile_box_middle {
-    width: 846px;
+    padding-right: 16px;
+    /* width: 846px;
     height: 620px;
     background-color: #c7d0d5;
-    margin-left: auto;
+    margin-left: auto; */
 }
 
-.profile_box_bottom {
+/* .profile_box_bottom {
     width: 846px;
     margin-left: auto;
     margin-bottom: 106px;
-}
+} */
 
+/* Edited:  */
 .webdesigner {
     font-size: 18px;
     letter-spacing: 0.1em;
-    padding-top: 110px;
-    margin-left: 222px;
+    /* padding-top: 110px; */
+    /* margin-left: 222px; */
 }
 
+/* Edited:  */
 .name {
+    /* font-size: 36px;
+  letter-spacing: 0.1em;
+  padding-top: 40px;
+  margin-left: 222px; */
     font-size: 36px;
     letter-spacing: 0.1em;
     padding-top: 40px;
-    margin-left: 222px;
 }
 
+/* Edited:  */
 .name_kanji {
     font-size: 20px;
     letter-spacing: 0.1em;
     padding-top: 40px;
-    margin-left: 222px;
+    /* margin-left: 222px; */
 }
 
+/* Edited:  */
 .profile_detail {
     font-size: 14px;
     line-height: 2.643;
-    width: 531px;
+    /* width: 531px; */
     padding-top: 68px;
-    margin-left: 222px;
+    /* margin-left: 222px; */
 }
 
 /* servise */
@@ -169,12 +211,20 @@ header {
 }
 
 .skill {
+    max-width: 885px;
+    margin: 115px auto 255px;
+    padding: 0 16px;
     display: flex;
-    padding-top: 302px;
+    /* padding-top: 302px;
     padding-left: 224px;
     padding-right: 224px;
-    padding-bottom: 215px;
+    padding-bottom: 215px; */
     text-align: center;
+    justify-content: space-between;
+}
+
+.skill > div {
+    width: 43%;
 }
 
 .skill_en {
@@ -188,8 +238,8 @@ header {
 }
 
 .skill_pic {
-    width: 365px;
-    height: 241px;
+    /* width: 365px;
+    height: 241px; */
     text-align: center;
     margin-top: 40px;
 }
@@ -201,6 +251,7 @@ header {
     line-height: 1.85;
     margin-top: 53px;
     word-wrap: anywhere;
+    text-align: left;
 }
 
 /* works */
@@ -229,16 +280,19 @@ header {
 }
 
 .works_contents {
+    max-width: 985px;
+    margin: 0 auto 248px;
+    padding: 0 16px;
     display: flex;
+    row-gap: 55px;
+    justify-content: space-between;
     /* width: max-content; */
     flex-wrap: wrap;
     margin-top: 232px;
-    margin-left: 198px;
-    column-gap: 55px;
 }
 
 .works_contents_item {
-    width: 34%;
+    width: 47%;
 }
 
 .works_category {
@@ -260,10 +314,17 @@ header {
     position: relative;
 }
 
+/* Edited:  */
 .contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
-    margin-left: 243px;
-    width: 980px;
+    max-width: 980px;
+    margin-left: 30%;
+    margin-right: 16px;
+    /* width: 980px; */
     height: 523px;
     background: linear-gradient(to bottom, #a3b8c4, #cdcdcf, #8082a3);
 }
@@ -272,38 +333,79 @@ header {
     font-size: 16px;
     line-height: 2.75;
     letter-spacing: 0.1em;
-    padding-top: 123px;
-    padding-left: 288px;
+    margin: 0 auto 70px 30%;
+    padding-right: 16px;
+    /* padding-top: 123px;
+    padding-left: 288px; */
 }
 
 .contact_button_bottom {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-left: 30%;
 }
 
 .contact_button_area {
+    max-width: 687px;
+    width: 100%;
+    height: 105px;
+    line-height: 105px;
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    margin-left: 288px;
+    text-align: center;
+    justify-content: center;
+    /* margin-left: 288px;
     margin-top: 70px;
     width: 100%;
     height: 105px;
-    z-index: 9999;
+    z-index: 9999; */
 }
 
 .contact_button {
     font-size: 20px;
     line-height: 2.2;
     letter-spacing: 0.1em;
-    margin-left: 187px;
-    padding-right: 230px;
+    /* margin-left: 187px;
+    padding-right: 230px; */
 }
 
 .footer {
+    height: 685px;
     margin-top: 225px;
+    padding: 240px 16px 140px;
+    padding-top: 240px;
+    padding-bottom: 140px;
+    background-image: url(../images/nami_bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     /* width: max-content; */
+}
+
+@media screen and (max-width: 1195px) {
+    .footer {
+        background-size: cover;
+    }
+}
+
+/* Edited:  */
+.footer__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.footer_menu {
+    display: flex;
+    gap: 40px;
 }
 
 .footer_img {
@@ -311,12 +413,23 @@ header {
     height: auto;
 }
 
-.footer_name {
-    color: #ffffff;
-    z-index: 9996;
+.sns-icon {
+    text-align: right;
+    padding-bottom: 70px;
 }
 
-.footer_menu {
+.sns-icon img {
+    width: 30px;
+}
+
+.footer_name p,
+.footer_menu a,
+.copyright {
+    color: #ffffff;
+    /* z-index: 9996; */
+}
+
+/* .footer_menu {
     color: #ffffff;
     z-index: 9995;
-}
+} */
