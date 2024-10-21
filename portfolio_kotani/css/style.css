@@ -84,6 +84,15 @@ header {
     padding-bottom: 75px;
 }
 
+.line {
+    /* 縦にするには？ */
+}
+
+.portfoliosite {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
 /* profile */
 #profile {
     position: relative;
@@ -200,6 +209,19 @@ header {
     position: relative;
 }
 
+.works_gradationbox {
+    /* width: 0.09%; */
+    width: 130px;
+    height: 1990px;
+    margin-top: 67px;
+    background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
+    text-align: left;
+}
+
+.works_flex {
+    display: flex;
+}
+
 .works {
     width: 100%;
     height: auto;
@@ -212,10 +234,24 @@ header {
     flex-wrap: wrap;
     margin-top: 232px;
     margin-left: 198px;
+    column-gap: 55px;
 }
 
 .works_contents_item {
     width: 34%;
+}
+
+.works_category {
+    font-size: 12px;
+    line-height: 3.58;
+    letter-spacing: 0.1em;
+    margin-top: 25px;
+}
+
+.works_name {
+    font-size: 16px;
+    line-height: 2.68;
+    letter-spacing: 0.1em;
 }
 
 /* contact */

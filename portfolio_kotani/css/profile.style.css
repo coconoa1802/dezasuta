@@ -41,3 +41,31 @@ header {
     max-width: auto;
     margin: 0, 410, 0, 160;
 }
+
+.profile {
+    margin-left: 5.66%;
+}
+
+.job {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-top: 160px;
+}
+
+.name_en {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    margin-top: 40px;
+}
+
+.name_kanji {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-top: 40px;
+}
+
+.pro {
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
