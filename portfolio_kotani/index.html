@@ -7,6 +7,18 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/bqi2yvm.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'xxx1gkb',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
 </head>
 
 <body>
@@ -203,8 +215,8 @@
             <div class="footer__info">
                 <!-- <img class="footer_img" src="./images/nami_bottom.jpg" alt="波"> -->
                 <div class="footer_name">
-                    <p>RIO KOTANI</p>
-                    <p>小谷 莉緒</p>
+                    <p class="footer_name-en">RIO KOTANI</p>
+                    <p class="footer_name-kanji">小谷 莉緒</p>
                 </div>
                 <ul class="footer_menu">
                     <li>

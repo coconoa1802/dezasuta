@@ -37,3 +37,158 @@ header {
     writing-mode: vertical-rl;
     align-items: center;
 }
+
+.contact_header {
+    display: flex;
+    gap: 15px;
+    padding: 115px 0 70px;
+}
+
+.short_line {
+    margin: auto 0;
+    width: 13%;
+}
+
+.namber {
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+
+.contact_header_category {
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+
+.contact_message p {
+    font-size: 17px;
+    line-height: 2.588;
+    margin-left: calc(13% + 15px);
+}
+
+.contact_message span {
+    color: #ff0000;
+}
+
+.question_flex {
+    display: flex;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: calc(13% + 15px);
+    margin-top: 135px;
+}
+
+.question li p {
+    margin-bottom: 25px;
+}
+
+.question span {
+    color: #ff0000;
+    margin-right: 12px;
+}
+
+.answer-box {
+    border: 1px solid #b8b8b8;
+    width: 68%;
+    height: 60px;
+}
+
+.answer-bigbox {
+    border: 1px solid #b8b8b8;
+    width: 68%;
+    height: 150px;
+}
+
+.gradation_box {
+    max-width: 290px;
+    margin: 55px 0 0 auto;
+    height: 1747px;
+    background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
+}
+
+.send-box {
+    width: 29%;
+    height: 61px;
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send {
+    font-size: 24px;
+    text-align: center;
+}
+
+.arrow {
+    width: 13px;
+    height: auto;
+    padding-left: 130px;
+}
+
+/* footer */
+
+.footer hr {
+    height: 0.75px;
+    width: 89%;
+    color: #1c1a3a;
+}
+
+.footer {
+    margin-top: 200px;
+}
+
+.footer__inner {
+    /* height: 1097px; */
+    margin-top: 76px;
+    padding: 0 120px 97px 120px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+.footer_name > p + p {
+    margin-top: 20px;
+}
+
+.footer_name-en {
+    font-size: 25px;
+    letter-spacing: 0.2em;
+}
+
+.footer_name-kanji {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+.footer_menu {
+    display: flex;
+    gap: 40px;
+}
+
+.copyright {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+
+.sns-icon {
+    text-align: right;
+    padding-bottom: 70px;
+}
+
+.sns-icon img {
+    width: 30px;
+}
+
+.footer_name p,
+.footer_menu a,
+.copyright {
+    color: #1c1a3a;
+}
