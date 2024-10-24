@@ -7,6 +7,17 @@
     <title>contact</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bqi2yvm.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'xxx1gkb',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
@@ -54,39 +65,44 @@
         </p>
     </div>
 
-    <div class="question_flex">
-        <ul class="question">
-            <li>
-                <p><span>＊</span>お名前</p>
-                <div class="answer-box"></div>
-            </li>
-            <li>
-                <p><span>＊</span>ふりがな</p>
-                <div class="answer-box"></div>
-            </li>
-            <li>
-                <p><span>＊</span>メールアドレス</p>
-                <div class="answer-box"></div>
-            </li>
-            <li>
-                <p><span>＊</span>電話番号</p>
-                <div class="answer-box"></div>
-            </li>
-            <li>
-                <p><span>＊</span>お問い合わせ内容の詳細</p>
-                <div class="answer-bigbox"></div>
-            </li>
-        </ul>
-        <div class="gradation_box"></div>
+    <div class="form-container">
+        <div class="question_form">
+            <ul class="question">
+                <li>
+                    <p><span>＊</span>お名前</p>
+                    <div class="answer-box"></div>
+                </li>
+                <li>
+                    <p><span>＊</span>ふりがな</p>
+                    <div class="answer-box"></div>
+                </li>
+                <li>
+                    <p><span>＊</span>メールアドレス</p>
+                    <div class="answer-box"></div>
+                </li>
+                <li>
+                    <p>電話番号</p>
+                    <p class="tel">ハイフンなしで入力してください。</p>
+                    <div class="answer-box"></div>
+                </li>
+                <li>
+                    <p><span>＊</span>お問い合わせ内容の詳細</p>
+                    <div class="answer-bigbox"></div>
+                </li>
+            </ul>
+            <div class="form-button">
+                <div class="send-box">
+                    <p class="send">送信</p>
+                    <p class="arrow">>></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gradation_box">
+            <img src="./images/porttower.png" alt="" />
+        </div>
     </div>
-    <div class="send-box">
-        <p class="send">送信</p>
-        <p class="arrow">>></p>
-    </div>
 
-
-
-    <img src="./images/porttower.jpg" alt="">
 
     <footer class="footer">
         <hr>
