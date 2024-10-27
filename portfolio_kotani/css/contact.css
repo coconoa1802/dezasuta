@@ -20,7 +20,12 @@ header {
 .header_nav ul {
     display: flex;
     gap: 35px;
-    margin-left: 640px;
+    justify-content: flex-end;
+    /* margin-left: 640px; */
+}
+
+.header_nav {
+    width: 100%;
 }
 
 .header_nav a {
@@ -95,7 +100,7 @@ header {
     margin-top: 135px;
 }
 
-.question li p {
+.question_items {
     font-size: 17px;
     font-family: kozuka-gothic-pr6n, sans-serif;
     font-weight: 400;
@@ -108,7 +113,7 @@ header {
     margin-right: 12px;
 }
 
-.tel {
+.tel-namber {
     font-size: 14px;
     font-family: kozuka-gothic-pr6n, sans-serif;
     font-weight: 400;

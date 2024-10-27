@@ -21,7 +21,6 @@ header {
     display: flex;
     gap: 35px;
     justify-content: flex-end;
-    /* margin-left: 640px; */
 }
 
 .header_nav {
@@ -68,96 +67,74 @@ header {
     letter-spacing: 0.03em;
 }
 
-.profile_top_img {
-    max-width: auto;
-    margin: 0, 410, 0, 160;
+.starrysky {
+    text-align: right;
 }
 
-.profile {
-    margin-left: 17%;
+.starrysky_img {
+    width: 79%;
 }
 
-.job {
-    font-size: 18px;
+/* works */
+
+#works {
+    position: relative;
+}
+
+.works_flex {
+    display: flex;
+}
+
+.works {
+    width: 100%;
+    height: auto;
+    margin-top: 68px;
+}
+
+.works_contents {
+    max-width: 985px;
+    margin: 0 auto 248px;
+    padding: 0 16px;
+    display: flex;
+    row-gap: 55px;
+    justify-content: space-between;
+    /* width: max-content; */
+    flex-wrap: wrap;
+    margin-top: 232px;
+}
+
+.works_contents_item {
+    width: 47%;
+}
+
+.works_category {
+    font-size: 12px;
     font-family: brother-1816-printed, sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-style: normal;
+    line-height: 3.58;
     letter-spacing: 0.1em;
-    margin-top: 160px;
+    margin-top: 25px;
 }
 
-.name_en {
-    font-size: 36px;
-    font-family: brother-1816-printed, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.1em;
-    margin-top: 40px;
-}
-
-.name_kanji {
-    font-size: 20px;
+.works_name {
+    font-size: 16px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0.1em;
-    margin-top: 40px;
-}
-
-.pro {
-    font-size: 14px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 35px;
-    margin-bottom: 90px;
-}
-
-.topic-items {
-    padding: 47px 0;
-}
-
-.category {
-    font-size: 18px;
-    font-family: brother-1816-printed, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    line-height: 2.68;
     letter-spacing: 0.1em;
 }
 
-.topic_line {
-    width: 0.75px;
-    color: #1c1a3a;
-    margin: 10px -21%;
-    width: 25%;
-}
-
-.category_detail {
-    font-size: 14px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.communication-tool {
-    font-size: 14px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 15px;
-}
+/* contact */
 
 .contact_box {
     display: flex;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     margin-top: 220px;
     max-width: 1156px;
     margin-left: 0%;
     height: 471px;
-    background: linear-gradient(to bottom, #65a7bc, #97adaa, #ebe6e0);
+    background-image: url(../images/works_contact.jpg);
 }
 
 .contact_box_title {
@@ -195,6 +172,7 @@ header {
     font-style: normal;
     line-height: 2.75;
     letter-spacing: 0.1em;
+    color: #ddd;
     margin: 60px 0 50px 30%;
 }
 
