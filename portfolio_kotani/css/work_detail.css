@@ -5,8 +5,8 @@ header {
     max-width: 1150px;
     margin: 0 auto;
     padding: 75px 10px 0;
-    background-image: url(../images/works_detail.png);
-    background-position: right;
+    /* background-image: url(../images/works_detail.png);
+  background-position: right; */
 }
 
 .header_inner {
@@ -43,6 +43,13 @@ header {
     column-gap: 13px;
     writing-mode: vertical-rl;
     align-items: center;
+}
+
+.top_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .portfoliosite {
