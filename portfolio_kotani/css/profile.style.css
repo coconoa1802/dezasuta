@@ -44,6 +44,14 @@ header {
     align-items: center;
 }
 
+.portfoliosite {
+    color: #1c1a3a;
+    font-size: 14px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
+}
+
 .profile_header {
     display: flex;
     gap: 15px;
@@ -74,7 +82,15 @@ header {
 }
 
 .profile {
+    position: relative;
     margin-left: 17%;
+}
+
+.tulip {
+    width: 32%;
+    position: absolute;
+    top: -90px;
+    right: 0;
 }
 
 .job {

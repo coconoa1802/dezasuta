@@ -43,6 +43,14 @@ header {
     align-items: center;
 }
 
+.portfoliosite {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
+}
+
 .profile_header {
     display: flex;
     gap: 15px;
@@ -68,11 +76,45 @@ header {
 }
 
 .starrysky {
+    /* width: 79%; */
     text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100vh;
+    background-image: url("./images/works.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-.starrysky_img {
-    width: 79%;
+.category_flex {
+    display: flex;
+    gap: 50px;
+    margin-top: 70px;
+    margin-left: calc(13% + 15px);
+    text-align: center;
+}
+
+.category li + li {
+    column-gap: 30px;
+}
+
+.category {
+    color: #1c1a3a;
+    font-size: 24px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
+}
+
+.category_items {
+    color: #1c1a3a;
+    font-size: 20px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
 }
 
 /* works */
@@ -107,7 +149,23 @@ header {
     width: 47%;
 }
 
+.works_contents_item:nth-child(even) {
+    margin-top: 150px;
+}
+
 .works_category {
+    color: #1c1a3a;
+    font-size: 12px;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 3.58;
+    letter-spacing: 0.1em;
+    margin-top: 25px;
+}
+
+.works_category_white {
+    color: #ffffff;
     font-size: 12px;
     font-family: brother-1816-printed, sans-serif;
     font-weight: 100;
@@ -118,6 +176,17 @@ header {
 }
 
 .works_name {
+    color: #1c1a3a;
+    font-size: 16px;
+    font-family: dnp-shuei-gothic-kin-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.68;
+    letter-spacing: 0.1em;
+}
+
+.works_name_white {
+    color: #ffffff;
     font-size: 16px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
     font-weight: 400;
@@ -273,7 +342,10 @@ header {
 }
 
 .footer_name p,
-.footer_menu a,
 .copyright {
     color: #1c1a3a;
+}
+
+.footer_menu a {
+    color: #ffffff;
 }

@@ -43,6 +43,14 @@ header {
     align-items: center;
 }
 
+.portfoliosite {
+    color: #1c144d;
+    font-size: 14px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
+}
+
 .contact_header {
     display: flex;
     gap: 15px;
@@ -108,9 +116,19 @@ header {
     margin-bottom: 25px;
 }
 
-.question span {
+.question_items span {
     color: #ff0000;
     margin-right: 12px;
+}
+
+.question_items_number {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px;
 }
 
 .tel-namber {
@@ -118,6 +136,7 @@ header {
     font-family: kozuka-gothic-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 20px;
 }
 
 .answer-box {

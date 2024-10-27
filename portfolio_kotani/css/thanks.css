@@ -43,6 +43,14 @@ header {
     align-items: center;
 }
 
+.portfoliosite {
+    color: #1c144d;
+    font-size: 14px;
+    font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
+    letter-spacing: 0.03em;
+}
+
 .contact_header {
     display: flex;
     gap: 15px;
