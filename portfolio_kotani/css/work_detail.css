@@ -30,6 +30,7 @@ header {
 }
 
 .header_nav a {
+    color: #ffffff;
     font-size: 16px;
     font-family: "Minion Variable", serif;
     /* font-family: "minion-pro", serif; */
@@ -59,6 +60,136 @@ header {
     /* font-family: "minion-pro", serif; */
     letter-spacing: 0.03em;
 }
+
+/* 課題 */
+
+.kadai {
+    height: auto;
+    position: relative;
+}
+
+.kadai img {
+    width: 52%;
+}
+
+.kadai01 {
+    margin-top: 298px;
+    margin-left: 15%;
+    border: solid 1px #1c1a3a;
+}
+
+.kadai02 {
+    margin-top: 126px;
+    margin-left: 40%;
+    border: solid 1px #1c1a3a;
+}
+
+.kadai03 {
+    margin-top: 226px;
+    margin-left: 5%;
+    border: solid 1px #1c1a3a;
+}
+
+.title_icons {
+    position: absolute;
+    top: 472px;
+    left: 68%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 13%;
+}
+
+.titlenumber {
+    font-size: 40px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.border {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-style: solid;
+    size: 1.42;
+    width: 24px;
+    color: #1c144d;
+}
+
+.title {
+    font-size: 28px;
+    font-family: "Minion Variable", serif;
+    letter-spacing: 0.03em;
+}
+
+.explanation {
+    position: absolute;
+    top: 1820px;
+    left: 61%;
+    max-width: 432px;
+}
+
+.explanation p {
+    color: #1c1a3a;
+}
+
+.graphic_design {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kadai_title {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding-top: 12px;
+}
+
+.kadai_explanation {
+    line-height: 1.75;
+    padding-top: 50px;
+}
+
+.period {
+    padding-top: 40px;
+}
+
+.software {
+    padding-top: 12px;
+}
+
+.kadai_explanation,
+.period,
+.software {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.kadai_title,
+.kadai_explanation,
+.period,
+.software {
+    font-family: dnp-shuei-gothic-kin-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.works_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.works_flex a {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* contact */
 
 .contact_box {
     display: flex;
