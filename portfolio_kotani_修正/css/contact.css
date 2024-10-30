@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* ==========
+header
+========== */
+header {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 75px 10px 0;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    width: 68px;
+}
+.header_nav ul {
+    display: flex;
+    gap: 35px;
+    justify-content: flex-end;
+}
+.header_nav {
+    width: 100%;
+}
+.header_nav a {
+    font-size: 16px;
+    font-family: "Minion Variable", serif;
+}
+.line {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    display: flex;
+    column-gap: 13px;
+    writing-mode: vertical-rl;
+    align-items: center;
+}
+.portfoliosite {
+    color: #1c144d;
+    font-size: 14px;
+    font-family: "Minion Variable", serif;
+
+    letter-spacing: 0.03em;
+}
+.contact_header {
+    display: flex;
+    gap: 15px;
+    padding: 115px 0 70px;
+}
+.short_line {
+    margin: auto 0;
+    width: 13%;
+}
+.namber {
+    font-size: 30px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.contact_header_category {
+    font-size: 30px;
+    font-family: "Minion Variable", serif;
+    letter-spacing: 0.03em;
+}
+.contact_message p {
+    font-size: 17px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.588;
+    margin-left: calc(13% + 15px);
+}
+.contact_message span {
+    color: #ff0000;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: calc(13% + 15px);
+}
+.question_form {
+    flex: 1;
+    margin-right: 30px;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 135px;
+}
+.question_items {
+    font-size: 17px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+.question_items span {
+    color: #ff0000;
+    margin-right: 12px;
+}
+.question_items_number {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+.tel-namber {
+    font-size: 14px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+}
+.answer-box {
+    border: 1px solid #b8b8b8;
+    width: 74%;
+    height: 60px;
+}
+.answer-bigbox {
+    border: 1px solid #b8b8b8;
+    width: 74%;
+    height: 150px;
+}
+.gradation_box {
+    flex: 1;
+    max-width: 290px;
+    height: 1747px;
+    background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
+    margin-top: 55px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.gradation_box img {
+    width: 60%;
+    height: auto;
+}
+.form-button {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.send-box {
+    width: 55%;
+    height: 61px;
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 95px;
+}
+.send {
+    font-size: 24px;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+}
+.arrow {
+    width: 13px;
+    height: auto;
+    text-align: right;
+    margin-right: 15px;
+}
+
+/* ==========
+footer
+========== */
+.footer hr {
+    margin-left: 75px;
+    position: relative;
+    height: 0.75px;
+    width: 85%;
+    color: #1c1a3a;
+    z-index: 1;
+}
+.footer {
+    margin-top: -380px;
+}
+.footer__inner {
+    margin-top: 76px;
+    margin-right: 35px;
+    padding: 0 187px 97px 120px;
+}
+.footer__info {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+.footer_name > p + p {
+    margin-top: 20px;
+}
+.footer_name-en {
+    font-size: 25px;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+.footer_name-kanji {
+    font-size: 18px;
+    font-family: dnp-shuei-gothic-kin-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+.footer_menu {
+    display: flex;
+    gap: 40px;
+}
+.copyright {
+    font-size: 14px;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+.sns-icon {
+    text-align: right;
+    padding-bottom: 70px;
+}
+.sns-icon img {
+    width: 30px;
+}
+.footer_name p,
+.footer_menu a,
+.copyright {
+    color: #1c1a3a;
+}
+
+.contact_message-sp {
+    display: none;
+}
+
+@media screen and (max-width: 796px) {
+    .contact_header {
+        padding: 81px 0 37px;
+    }
+    .short_line {
+        margin: auto 0;
+        width: 20%;
+    }
+    .namber {
+        font-size: 20px;
+    }
+    .contact_header_category {
+        font-size: 20px;
+    }
+    .contact_message {
+        display: none;
+    }
+    .contact_message-sp {
+        display: block;
+        font-size: 15px;
+        font-family: kozuka-gothic-pr6n, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2.53;
+        letter-spacing: 0.05em;
+        margin-left: 10%;
+    }
+    .contact_message-sp span {
+        color: #ff0000;
+    }
+
+    .gradation_box {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+    .footer-sp {
+        display: block;
+    }
+    .footer__inner-sp {
+        margin-top: 184px;
+        margin-left: 10%;
+    }
+    .footer_name-sp > p + p {
+        margin-top: 20px;
+    }
+    .footer_name-en-sp {
+        font-size: 18px;
+        font-family: brother-1816-printed, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2em;
+    }
+    .footer_name-kanji-sp {
+        font-size: 14px;
+        font-family: dnp-shuei-gothic-kin-std, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.1em;
+    }
+    .copyright-sp {
+        font-size: 13px;
+        font-family: brother-1816-printed, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2em;
+    }
+    .sns-icon-sp img {
+        width: 30px;
+    }
+    .footer_name-sp p,
+    .copyright-sp {
+        color: #ffffff;
+    }
+}
+
+.sns-icon {
+    text-align: right;
+    padding-bottom: 70px;
+}
+
+.footer_name p,
+.footer_menu a,
+.copyright {
+    color: #1c1a3a;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>works</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/work_detail.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/bqi2yvm.css" />
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "xxx1gkb",
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header_inner">
+      <h1 class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.jpg" alt="" />
+        </a>
+      </h1>
+      <nav class="header_nav">
+        <ul>
+          <li>
+            <a href="./profile.html">profile</a>
+          </li>
+          <li>
+            <a href="./index.html#service">service</a>
+          </li>
+          <li>
+            <a href="./work.html">works</a>
+          </li>
+          <li>
+            <a href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="line">
+      <div style="background-color: #666666; width: 0.5px; height: 113px"></div>
+      <p class="portfoliosite">RIO KOTANI</p>
+      <p class="portfoliosite">WEB DESIGNER PORTFOLIO SITE</p>
+    </div>
+    <div class="top_img">
+      <img src="./images/works_detail.png" alt="" />
+    </div>
+  </header>
+
+  <div class="kadai">
+    <div class="kadai01">
+      <img src="./images/material_01.jpg" alt="資料01" />
+    </div>
+    <div class="kadai02">
+      <img src="./images/material_02.jpg" alt="資料02" />
+    </div>
+    <div class="kadai03-contents">
+      <div class="kadai03">
+        <img src="./images/material_03.jpg" alt="資料03" />
+      </div>
+      <div class="explanation">
+        <p class="graphic_design">graphic design</p>
+        <p class="kadai_title">企画書の資料</p>
+        <p class="kadai_explanation">
+          文字の間隔を広めに取り、細い線を使ったあしらいを入れることで
+          <br />シンプルかつスタイリッシュさを演出。
+        </p>
+        <p class="period">制作期間： 2日間</p>
+        <p class="software">使ったソフト： illustrator</p>
+      </div>
+    </div>
+    <div class="title_icons">
+      <p class="titlenumber">03</p>
+      <hr class="border" />
+      <p class="title">works</p>
+    </div>
+  </div>
+
+  <div class="works_flex">
+    <a class="works_nav" href="./work.html">
+      <p>&lt;&lt;</p>
+      <p class="works_nav_text">view all</p>
+    </a>
+    <a class="works_nav" href="">
+      <p class="works_nav_text">next</p>
+      <p>&gt;&gt;</p>
+    </a>
+  </div>
+
+  <div class="contact_box">
+    <div class="contact_box_title">
+      <p class="contact">contact</p>
+      <hr class="over_line" />
+    </div>
+    <div class="contact_box_content">
+      <p class="contact_detail">
+        当サイトをご覧いただきありがとうございます。<br />
+        各種ご依頼やお問い合わせ、制作料金のご相談・ご質問など<br />
+        お気軽にこちらのフォームよりご送信ください。<br />
+        2営業日以内でご返信させていただきます。
+      </p>
+      <div class="contact_button_bottom">
+        <a class="contact_button_area">
+          <p class="contact_button">お問い合わせはこちら</p>
+          <p>>></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <hr />
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer_name">
+          <p class="footer_name-en">RIO KOTANI</p>
+          <p class="footer_name-kanji">小谷 莉緒</p>
+        </div>
+        <ul class="footer_menu">
+          <li>
+            <a href="./profile.html">profile</a>
+          </li>
+          <li>
+            <a href="#service">service</a>
+          </li>
+          <li>
+            <a href="./work.html">works</a>
+          </li>
+          <li>
+            <a href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sns-icon">
+        <a href="">
+          <img src="./images/Instagram_gr.png" alt="Instagramアイコン" />
+        </a>
+      </div>
+      <p class="copyright">&copy;2024 RIO KOTANI</p>
+    </div>
+  </footer>
+</body>
+
+</html>
