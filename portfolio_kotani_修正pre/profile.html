@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <!-- slickのCSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/profile.style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/bqi2yvm.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "xxx1gkb",
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header_inner">
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="./images/logo.jpg" alt="" />
+          </a>
+        </h1>
+        <nav class="header_nav">
+          <ul>
+            <li>
+              <a href="./profile.html">profile</a>
+            </li>
+            <li>
+              <a href="./index.html#service">service</a>
+            </li>
+            <li>
+              <a href="./work.html">works</a>
+            </li>
+            <li>
+              <a href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="line">
+        <div
+          style="background-color: #666666; width: 0.5px; height: 113px"
+        ></div>
+        <p class="portfoliosite">RIO KOTANI</p>
+        <p class="portfoliosite">WEB DESIGNER PORTFOLIO SITE</p>
+      </div>
+    </header>
+
+    <div class="profile_header">
+      <hr class="short_line" />
+      <p class="namber">01</p>
+      <p class="profile_header_category">profile</p>
+    </div>
+
+    <img class="profile_top_img" src="./images/himawari.jpg" alt="himawari" />
+
+    <div class="profile">
+      <img class="tulip" src="./images/tulip.jpg" alt="tulip" />
+      <div>
+        <p class="job">web Designer</p>
+        <p class="name_en">RIO KOTANI</p>
+        <p class="name_kanji">小谷 莉緒</p>
+        <p class="pro">1997年生まれ。兵庫県出身のマイペースで●●な人間です。</p>
+      </div>
+
+      <div class="topic">
+        <div class="topic-items">
+          <p class="category">Skill</p>
+          <hr class="topic_line" />
+          <p class="category_detail">llustrator / Photoshop / HTML / CSS</p>
+        </div>
+
+        <div class="topic-items">
+          <p class="category">Tool</p>
+          <hr class="topic_line" />
+          <p class="communication-tool">
+            以下のツールでを用いてコミュニケーションを取ることが可能です。
+          </p>
+          <p class="category_detail">Zoom / Googlemeat / Chatwork</p>
+        </div>
+
+        <div class="topic-items">
+          <p class="category">Like</p>
+          <hr class="topic_line" />
+          <p class="category_detail">
+            実家の犬と遊ぶこと、旅をすること、水族館に行くこと。
+          </p>
+        </div>
+
+        <div class="topic-items">
+          <p class="category">Lisence</p>
+          <hr class="topic_line" />
+          <p class="category_detail">
+            カラーパーソナル検定2級 / 中学校教諭専修免許状(国語科) /
+            高等学校教諭専修免許状(国語科)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <img src="./images/img_1109.jpeg" alt="setre" />
+      <img src="./images/img_3731.jpeg" alt="sky" />
+      <img src="./images/img_4392.jpeg" alt="moere" />
+      <img src="./images/img_4555.jpg" alt="kyoto" />
+    </div>
+
+    <div class="contact_box">
+      <div class="contact_box_title">
+        <p class="contact">contact</p>
+        <hr class="over_line" />
+      </div>
+      <div class="contact_box_content">
+        <p class="contact_detail">
+          当サイトをご覧いただきありがとうございます。<br />
+          各種ご依頼やお問い合わせ、制作料金のご相談・ご質問など<br />
+          お気軽にこちらのフォームよりご送信ください。<br />
+          2営業日以内でご返信させていただきます。
+        </p>
+        <div class="contact_button_bottom">
+          <a class="contact_button_area">
+            <p class="contact_button">お問い合わせはこちら</p>
+            <p>>></p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <hr />
+      <div class="footer__inner">
+        <div class="footer__info">
+          <div class="footer_name">
+            <p class="footer_name-en">RIO KOTANI</p>
+            <p class="footer_name-kanji">小谷 莉緒</p>
+          </div>
+          <ul class="footer_menu">
+            <li>
+              <a href="./profile.html">profile</a>
+            </li>
+            <li>
+              <a href="#service">service</a>
+            </li>
+            <li>
+              <a href="./work.html">works</a>
+            </li>
+            <li>
+              <a href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sns-icon">
+          <a href="">
+            <img src="./images/Instagram_gr.png" alt="Instagramアイコン" />
+          </a>
+        </div>
+        <p class="copyright">&copy;2024 RIO KOTANI</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/scrip.js"></script>
+  </body>
+</html>
