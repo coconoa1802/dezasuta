@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/bqi2yvm.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     (function (d) {
       var config = {
@@ -166,23 +167,16 @@
     </div>
     <div class="profile__bg-sp">
       <div class="profile_box_top-sp">
-        <img src="./images/" alt="波線(上)" />
+        <img src="./images/profile_nami_top.jpg" alt="波線(上)" />
       </div>
-      <div class="bg-color-sp"></div>
-      <div class="profile_box_bottom-sp">
-        <img src="./svg/波線(下).svg" alt="波線(下)" />
-      </div>
-    </div>
-    <div class="profile_pic-sp">
-      <div class="profile_picture-sp">
-        <img src="./images/profile.jpg" alt="profile写真" />
-      </div>
-      <div class="profile_box-sp">
-        <div class="profile_box_middle-sp">
+      <div class="profile_pic-sp">
+        <div class="profile_picture-sp">
+          <img src="./images/profile.jpg" alt="profile写真" />
+        </div>
+        <div class="profile_box-sp">
           <p class="webdesigner-sp">web Designer</p>
           <p class="name-sp">RIO KOTANI</p>
           <p class="name_kanji-sp">小谷 莉緒</p>
-
           <p class="profile_detail-sp">
             昔から広告や広告のキャッチコピーなどに心を惹かれることが多かった。
             大学時代に広報活動に携わり、自分のアイデアを形にするお仕事に惹かれ、
@@ -194,7 +188,9 @@
           </p>
         </div>
       </div>
-    </div>
+      <div class="profile_box_bottom-sp">
+        <img src="./images/profile_nami_bottom.jpg" alt="波線(下)" />
+      </div>
     </div>
   </section>
 
@@ -203,6 +199,11 @@
       <p class="titlenumber">02</p>
       <hr class="border" />
       <p class="title">service</p>
+    </div>
+    <div class="title_icons-sp">
+      <p class="titlenumber-sp">02</p>
+      <hr class="border-sp" />
+      <p class="title-sp">service</p>
     </div>
 
     <div class="skill">
@@ -283,6 +284,62 @@
     </div>
   </section>
 
+  <section id="works-sp">
+    <div class="works_gradationbox-sp">
+      <div class="title_icons-sp">
+        <p class="titlenumber-sp">03</p>
+        <hr class="border-sp" />
+        <p class="title-sp">works</p>
+      </div>
+      <div class="works_contents-sp">
+        <div class="works_contents_item-sp">
+          <a href="">
+            <img src="./images/hamburger_POP.jpg" alt="hamburger_POP" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">ハンバーガーショップのバナー</p>
+          </a>
+        </div>
+        <div class="works_contents_item-sp">
+          <a href="">
+            <img src="./images/Instagram.jpg" alt="Instagram" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">セミナーのバナー</p>
+          </a>
+        </div>
+        <div class="works_contents_item-sp">
+          <a href="">
+            <img src="./images/hamburger_luxury.jpg" alt="hamburger_luxury" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">ハンバーガーショップのバナー</p>
+          </a>
+        </div>
+        <div class="works_contents_item-sp">
+          <a href="./work_detail.html">
+            <img src="./images/material.jpg" alt="資料" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">企画書の資料</p>
+          </a>
+        </div>
+        <div class="works_contents_item-sp">
+          <a href="">
+            <img src="./images/salon_LP.jpg" alt="salon_LP" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">サロンのLPデザイン</p>
+          </a>
+        </div>
+        <div class="works_contents_item-sp">
+          <a href="">
+            <img src="./images/flyer.jpg" alt="チラシ" />
+            <p class="works_category-sp">Web design</p>
+            <p class="works_name-sp">
+              太陽光発電と蓄電池発電に関する補助金のチラシ
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="title_icons">
       <p class="titlenumber">04</p>
@@ -344,6 +401,13 @@
         $(".hamburger").toggleClass("open")
         $(".header-nav-sp").fadeToggle();
       });
+      $(".works_contents-sp").slick({
+        autoplaySpeed: 2000,
+        autoplay: true,
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false
+      })
     });
   </script>
 </body>

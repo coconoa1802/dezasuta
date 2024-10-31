@@ -244,7 +244,7 @@ footer
     display: none;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 767px) {
     .contact_header {
         padding: 81px 0 37px;
     }
@@ -263,18 +263,32 @@ footer
     }
     .contact_message-sp {
         display: block;
+        width: 60%;
+        margin-left: calc(13% + 15px);
+    }
+    .contact_message-sp p {
         font-size: 15px;
         font-family: kozuka-gothic-pr6n, sans-serif;
         font-weight: 400;
         font-style: normal;
         line-height: 2.53;
         letter-spacing: 0.05em;
-        margin-left: 10%;
     }
     .contact_message-sp span {
         color: #ff0000;
     }
 
+    .question {
+        margin-top: 65px;
+    }
+    .form-button {
+        width: 100%;
+        justify-content: left;
+    }
+    .send-box {
+        width: 74%;
+        margin-top: 45px;
+    }
     .gradation_box {
         display: none;
     }
@@ -285,7 +299,7 @@ footer
     .footer-sp {
         display: block;
         height: 463px;
-        margin-top: 80px;
+        margin-top: 0px;
         background-image: url(../images/contact-sp.jpg);
         background-repeat: no-repeat;
         background-position: top 0 center;
