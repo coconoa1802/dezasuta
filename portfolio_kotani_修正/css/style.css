@@ -413,7 +413,8 @@ footer
 .header-nav-sp,
 .box-sp,
 .line-sp,
-#profile-sp {
+#profile-sp,
+.footer-sp {
     display: none;
 }
 
@@ -443,7 +444,7 @@ footer
         width: 12px;
         color: #1c144d;
     }
-    .title {
+    .title-sp {
         font-size: 14px;
         font-family: "Minion Variable", serif;
         letter-spacing: 0.03em;
@@ -570,6 +571,7 @@ footer
         padding-top: 62px;
     }
 
+    /* profile */
     #profile {
         display: none;
     }
@@ -622,6 +624,7 @@ footer
         padding-top: 30px;
     }
 
+    /* service */
     #service {
         display: flex;
         flex-direction: column;
@@ -661,7 +664,108 @@ footer
     }
     .works_gradationbox-sp {
         width: 100%;
-        height: 630px;
+        height: 930px;
         background: linear-gradient(to bottom, #e3bb8d, #cdcdcf, #8082a3);
+        display: flex;
+        flex-direction: column;
+    }
+    .works_gradationbox-sp .title_icons-sp {
+        padding: 35px 0 55px 0;
+    }
+    .works_contents-sp {
+        padding: 0 90px;
+    }
+
+    .works_category-sp {
+        margin-top: 25px;
+    }
+    .works_name-sp {
+        padding-top: 15px;
+    }
+
+    /* contact */
+    #contact {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_box {
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 0;
+        height: 445px;
+    }
+    .contact_detail {
+        font-size: 14px;
+        line-height: 2.64;
+        letter-spacing: 0.05em;
+        margin: 0;
+        padding-right: 0px;
+    }
+    .contact_detail > .contact_button_bottom {
+        column-gap: 70px;
+    }
+    .contact_button_bottom {
+        justify-content: center;
+        padding: revert;
+    }
+    .contact_button_area {
+        max-width: 350px;
+        height: 52px;
+        margin-top: 70px;
+    }
+    .contact_button {
+        font-size: 14px;
+    }
+
+    /* footer */
+    .footer {
+        display: none;
+    }
+    .footer-sp {
+        display: block;
+        height: 463px;
+        margin-top: 0px;
+        background-image: url(../images/contact-sp.jpg);
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: cover;
+    }
+    .footer__inner-sp {
+        padding-top: 184px;
+        margin-left: 10%;
+    }
+    .footer_name-sp > p + p {
+        margin-top: 20px;
+    }
+    .footer_name-en-sp {
+        font-size: 18px;
+        font-family: brother-1816-printed, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2em;
+    }
+    .footer_name-kanji-sp {
+        font-size: 14px;
+        font-family: dnp-shuei-gothic-kin-std, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.1em;
+        margin-bottom: 37px;
+    }
+    .copyright-sp {
+        font-size: 13px;
+        font-family: brother-1816-printed, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2em;
+    }
+    .sns-icon-sp img {
+        margin-bottom: 37px;
+        width: 30px;
+    }
+    .footer_name-sp p,
+    .copyright-sp {
+        color: #ffffff;
     }
 }
