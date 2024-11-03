@@ -57,7 +57,7 @@ header {
     font-family: "Minion Variable", serif;
     letter-spacing: 0.03em;
 }
-.profile_header {
+.work_header {
     display: flex;
     gap: 15px;
     padding: 120px 0;
@@ -73,7 +73,7 @@ header {
     font-style: normal;
     letter-spacing: 0.03em;
 }
-.profile_header_category {
+.work_header_category {
     font-size: 30px;
     letter-spacing: 0.03em;
 }
@@ -418,4 +418,27 @@ footer
 }
 .footer_menu a {
     color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    .work_header {
+        padding: 45px 0 35px 0;
+    }
+    .short_line {
+        margin: auto 0;
+        width: 20%;
+    }
+    .namber {
+        font-size: 20px;
+    }
+    .work_header_category {
+        font-size: 20px;
+    }
+    .category_flex {
+        margin: 0;
+        margin-left: calc(20% + 15px);
+    }
+    .category {
+        font-size: 16px;
+    }
 }
