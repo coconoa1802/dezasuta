@@ -1,3 +1,17 @@
+$(function () {
+  $(".hamburger").click(function () {
+    $(".header-nav-sp").fadeToggle();
+  });
+
+  const $menu = $(".header-nav-sp");
+  $(window).on("resize", function () {
+    if ($(window).width() > 767 && $menu.is(":visible")) {
+      // $menu.fadeOut();
+      $menu.hide();
+    }
+  });
+});
+
 // スライダー
 $(function () {
   $(".slider").slick({
@@ -35,6 +49,22 @@ $(function () {
     if (!$(e.target).closest('.custom-select').length) {
       $('.custom-select').removeClass('open');
     }
+  });
+});
+
+$(function () {
+  $('.send-box').on('click', function () {
+    window.location.href = './thanks.html';
+  });
+});
+
+$(document).ready(function() {
+  $('.more').on('click', function() {
+    window.location.href = './profile.html';
+  });
+
+  $('.more-work').on('click', function() {
+    window.location.href = './work.html';
   });
 });
 

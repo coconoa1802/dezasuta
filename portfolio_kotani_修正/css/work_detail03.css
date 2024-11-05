@@ -1,32 +1,39 @@
 @charset "UTF-8";
-/* ==========
-header
-========== */
+
+/* header */
 header {
     max-width: 1150px;
     margin: 0 auto;
     padding: 75px 10px 0;
 }
+
 .header_inner {
     display: flex;
     align-items: center;
     width: 100%;
 }
+
 .logo {
     width: 68px;
 }
+
 .header_nav ul {
     display: flex;
     gap: 35px;
     justify-content: flex-end;
 }
+
 .header_nav {
     width: 100%;
 }
+
 .header_nav a {
+    color: #ffffff;
     font-size: 16px;
     font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
 }
+
 .line {
     position: absolute;
     top: 0;
@@ -36,10 +43,19 @@ header {
     writing-mode: vertical-rl;
     align-items: center;
 }
+
+.top_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .portfoliosite {
-    color: #1c1a3a;
+    color: #1c144d;
     font-size: 14px;
     font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
     letter-spacing: 0.03em;
 }
 
@@ -100,124 +116,160 @@ header {
     }
 }
 
-.profile_header {
-    display: flex;
-    gap: 15px;
-    padding: 120px 0;
+/* 課題 */
+
+.kadai {
+    height: auto;
+    position: relative;
 }
-.short_line {
-    margin: auto 0;
-    width: 13%;
+
+.kadai img {
+    width: 36%;
 }
-.namber {
-    font-size: 30px;
+
+.kadai01 {
+    margin-top: 298px;
+    margin-left: 15%;
+    border: solid 1px #1c1a3a;
+}
+
+.title_icons {
+    position: absolute;
+    top: 450px;
+    left: 72%;
+    text-align: center;
+    display: inline-block;
+}
+
+.titlenumber {
+    font-size: 40px;
     font-family: kozuka-gothic-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.border {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-style: solid;
+    size: 1.42;
+    width: 24px;
+    color: #1c144d;
+}
+
+.title {
+    font-size: 28px;
+    font-family: "Minion Variable", serif;
     letter-spacing: 0.03em;
 }
-.profile_header_category {
-    font-size: 30px;
-    letter-spacing: 0.03em;
-}
-.profile_top_img {
-    max-width: auto;
-    margin: 0, 410, 0, 160;
-}
-.profile {
-    position: relative;
-    margin-left: 17%;
-}
-.tulip {
-    width: 32%;
+
+.explanation {
     position: absolute;
-    top: -90px;
-    right: 0;
+    top: 550px;
+    left: 65%;
+    max-width: 432px;
 }
-.job {
-    font-size: 18px;
+
+.explanation p {
+    color: #1c1a3a;
+}
+
+.graphic_design {
+    font-size: 14px;
+    letter-spacing: 0.1em;
     font-family: brother-1816-printed, sans-serif;
     font-weight: 200;
     font-style: normal;
-    letter-spacing: 0.1em;
-    margin-top: 160px;
 }
-.name_en {
-    font-size: 36px;
-    font-family: brother-1816-printed, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+.kadai_title {
+    font-size: 16px;
     letter-spacing: 0.1em;
-    margin-top: 40px;
+    padding-top: 12px;
 }
-.name_kanji {
-    font-size: 20px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.1em;
-    margin-top: 40px;
+
+.kadai_explanation {
+    line-height: 1.75;
+    padding-top: 50px;
 }
-.pro {
+
+.period {
+    padding-top: 40px;
+}
+
+.software {
+    padding-top: 12px;
+}
+
+.kadai_explanation,
+.period,
+.software {
     font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.kadai_title,
+.kadai_explanation,
+.period,
+.software {
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 35px;
-    margin-bottom: 90px;
 }
-.topic-items {
-    padding: 47px 0;
+
+.works_flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
 }
-.category {
+
+.works_nav {
+    display: flex;
+}
+
+.works_nav_text {
+    padding: 0 57px;
+}
+
+.works_flex p {
     font-size: 18px;
-    font-family: brother-1816-printed, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     letter-spacing: 0.1em;
-}
-.topic_line {
-    width: 0.75px;
-    color: #1c1a3a;
-    margin: 10px -21%;
-    width: 25%;
-}
-.category_detail {
-    font-size: 14px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 200;
     font-style: normal;
 }
-.communication-tool {
-    font-size: 14px;
-    font-family: dnp-shuei-gothic-kin-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 15px;
-}
+
+/* contact */
+
 .contact_box {
     display: flex;
     margin-top: 220px;
     max-width: 1156px;
     margin-left: 0%;
     height: 471px;
-    background: linear-gradient(to bottom, #65a7bc, #97adaa, #ebe6e0);
+    background: linear-gradient(to bottom, #111c3e, #033b7b, #5c6f9c);
 }
+
 .contact_box_title {
     position: relative;
     top: 105px;
     padding-left: 13%;
 }
+
 .contact {
     font-size: 40px;
     font-family: "Minion Variable", serif;
+    /* font-family: "minion-pro", serif; */
     letter-spacing: 0.03em;
+    /* color: #ffffff; */
     color: #ddd;
 }
+
 .over_line {
     width: 150%;
     margin-left: -25%;
 }
+
 .contact_box_content {
     width: 100%;
     display: flex;
@@ -225,7 +277,9 @@ header {
     align-items: start;
     justify-content: center;
 }
+
 .contact_detail {
+    color: #ffffff;
     font-size: 16px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
     font-weight: 400;
@@ -234,12 +288,14 @@ header {
     letter-spacing: 0.1em;
     margin: 60px 0 50px 30%;
 }
+
 .contact_button_bottom {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     padding-left: 30%;
 }
+
 .contact_button_area {
     max-width: 687px;
     width: 100%;
@@ -248,9 +304,11 @@ header {
     display: flex;
     align-items: center;
     background-color: #ffffff;
+    /* text-align: center; */
     justify-content: center;
     column-gap: 33%;
 }
+
 .contact_button {
     font-size: 20px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
@@ -259,38 +317,36 @@ header {
     line-height: 2.2;
     letter-spacing: 0.1em;
 }
-.slider {
-    margin-top: 220px;
-}
-.slider img {
-    margin: 0 10px;
-    aspect-ratio: 4/3;
-}
 
-/* ==========
-footer
-========== */
+/* footer */
+
 .footer hr {
     height: 0.75px;
     width: 89%;
     color: #1c1a3a;
 }
+
 .footer {
     margin-top: 200px;
 }
+
 .footer__inner {
+    /* height: 1097px; */
     margin-top: 76px;
     padding: 0 120px 97px 120px;
 }
+
 .footer__info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 50px;
 }
+
 .footer_name > p + p {
     margin-top: 20px;
 }
+
 .footer_name-en {
     font-size: 25px;
     font-family: brother-1816-printed, sans-serif;
@@ -298,6 +354,7 @@ footer
     font-style: normal;
     letter-spacing: 0.2em;
 }
+
 .footer_name-kanji {
     font-size: 18px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
@@ -305,10 +362,12 @@ footer
     font-style: normal;
     letter-spacing: 0.1em;
 }
+
 .footer_menu {
     display: flex;
     gap: 40px;
 }
+
 .copyright {
     font-size: 14px;
     font-family: brother-1816-printed, sans-serif;
@@ -316,13 +375,16 @@ footer
     font-style: normal;
     letter-spacing: 0.2em;
 }
+
 .sns-icon {
     text-align: right;
     padding-bottom: 70px;
 }
+
 .sns-icon img {
     width: 30px;
 }
+
 .footer_name p,
 .footer_menu a,
 .copyright {
@@ -331,12 +393,39 @@ footer
 
 .hamburger,
 .header-nav-sp,
-.pro-sp,
-.contact_box-sp {
+.work_header {
     display: none;
 }
 
 @media screen and (max-width: 767px) {
+    .title_icons {
+        display: none;
+    }
+    .work_header {
+        display: flex;
+        gap: 15px;
+        padding: 45px 0 35px 0;
+    }
+    .short_line {
+        margin: auto 0;
+        width: 20%;
+    }
+    .namber {
+        font-size: 20px;
+        font-family: kozuka-gothic-pr6n, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.03em;
+    }
+    .work_header_category {
+        font-size: 20px;
+        letter-spacing: 0.03em;
+    }
+
+    .top_img {
+        display: none;
+    }
+
     header {
         padding-top: 35px;
     }
@@ -352,21 +441,9 @@ footer
 
     .hamburger {
         display: block;
-        /* width: 44px;
-        height: 8px;
-        position: absolute;
-        top: 69px;
-        right: 40px;
-        cursor: pointer;
-        z-index: 9999; */
     }
 
     .header-nav-sp {
-        /* position: absolute;
-        background-color: #e6dfdfc4;
-        width: 100%;
-        height: 100vh;
-        z-index: 9998; */
         position: fixed;
         width: 100%;
         height: 65vh;
@@ -455,93 +532,51 @@ footer
         }
     }
 
-    .profile_header {
-        padding: 50px 0;
+    /* 課題 */
+
+    .kadai img {
+        width: 70%;
     }
-    .short_line {
-        margin: auto 0;
-        width: 20%;
+    .kadai01 {
+        margin-top: 35px;
     }
-    .namber {
-        font-size: 20px;
+    .explanation {
+        position: static;
+        margin: 15% 0 15% 15%;
     }
-    .profile_header_category {
-        font-size: 20px;
+    .works_flex {
+        margin-top: 0;
     }
 
-    .profile {
-        margin-left: 0;
-    }
-    .tulip {
-        display: none;
-    }
-    .profile-center {
-        text-align: center;
-    }
-    .job {
-        font-size: 15px;
-        margin-top: 65px;
-    }
-    .name_en {
-        font-size: 25px;
-        margin-top: 30px;
-    }
-    .name_kanji {
-        font-size: 16px;
-        margin-top: 32px;
-    }
-    .pro {
-        display: none;
-    }
-    .pro-sp {
-        display: block;
-        font-size: 14px;
-        font-family: dnp-shuei-gothic-kin-std, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 2.9;
-        margin-top: 47px;
-        margin-bottom: 23px;
-    }
-    .topic {
-        margin-left: 10%;
-    }
-    .topic_line {
-        margin: 10px -10%;
-        width: 27%;
-    }
-
+    /* contact */
     .contact_box {
-        display: none;
-    }
-    .contact_box-sp {
-        display: block;
-        width: 100%;
-        height: 443px;
-    }
-    .contact_box-sp {
         display: flex;
         flex-direction: column;
-        margin-top: 37px;
+        margin-top: 80px;
+        width: 100%;
         height: auto;
-        background: linear-gradient(to bottom, #65a7bc, #97adaa, #ebe6e0);
+        /* background: linear-gradient(to bottom, #65a7bc, #97adaa, #ebe6e0); */
     }
-    .contact_box_title-sp {
+    .contact_box_title {
+        position: static;
+        top: 0;
+        padding-left: 0;
         margin-top: 56px;
         padding-bottom: 27px;
     }
-    .contact-sp {
+    .contact {
         font-size: 20px;
         font-family: "Minion Variable", serif;
         letter-spacing: 0.03em;
         color: #ddd;
         margin-left: 5%;
     }
-    .over_line-sp {
+    .over_line {
         width: 130px;
         margin-left: 0;
     }
-    .contact_detail-sp {
+    .contact_detail {
+        margin: 0;
         width: 62%;
         font-size: 14px;
         font-family: dnp-shuei-gothic-kin-std, sans-serif;
@@ -552,13 +587,13 @@ footer
         margin-bottom: 25px;
         margin-left: 5%;
     }
-    .contact_button_bottom-sp {
+    .contact_button_bottom {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         padding-left: 30%;
     }
-    .contact_button_area-sp {
+    .contact_button_area {
         max-width: 687px;
         width: 100%;
         height: 52px;
@@ -570,17 +605,13 @@ footer
         column-gap: 33%;
         margin-bottom: 70px;
     }
-    .contact_button-sp {
+    .contact_button {
         font-size: 14px;
         font-family: dnp-shuei-gothic-kin-std, sans-serif;
         font-weight: 400;
         font-style: normal;
         letter-spacing: 0.1em;
     }
-    .slider {
-        margin-top: 80px;
-    }
-    /* footer */
 
     .footer {
         margin-top: 40px;
@@ -594,6 +625,9 @@ footer
     .sns-icon {
         text-align: left;
         padding-bottom: 35px;
+    }
+    .sns-icon-img {
+        display: none;
     }
     .footer_name-en {
         font-size: 18px;

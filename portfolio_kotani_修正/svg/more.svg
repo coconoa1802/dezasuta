@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.23 4.05">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .6;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #1c1a3a;
+        stroke-miterlimit: 10;
+        stroke-width: 1.01px;
+      }
+    </style>
+  </defs>
+  <g id="_ポートフォリオ" data-name="ポートフォリオ">
+    <g class="cls-1">
+      <path class="cls-2" d="m61.23,3.54c-7.65,0-7.65-3.04-15.31-3.04-7.65,0-7.65,3.04-15.31,3.04-7.65,0-7.65-3.04-15.31-3.04C7.65.51,7.65,3.54,0,3.54"/>
+    </g>
+  </g>
+</svg>

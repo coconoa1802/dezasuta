@@ -59,6 +59,63 @@ header {
     letter-spacing: 0.03em;
 }
 
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    /*全体の高さ*/
+    height: 50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+    /*描画位置*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /*テキストの形状*/
+    color: #1c144d;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+    font-family: "Minion Variable", serif;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 0;
+    /*線の形状*/
+    width: 1px;
+    height: 30px;
+    background: #1c144d;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove 2s ease-in-out infinite;
+    opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+    30% {
+        height: 100px;
+        opacity: 1;
+    }
+    100% {
+        height: 0;
+        top: 100px;
+        opacity: 0;
+    }
+}
+
 /* 課題 */
 
 .kadai {
@@ -332,4 +389,260 @@ header {
 .footer_menu a,
 .copyright {
     color: #1c1a3a;
+}
+
+.hamburger,
+.header-nav-sp,
+.work_header {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .title_icons {
+        display: none;
+    }
+    .work_header {
+        display: flex;
+        gap: 15px;
+        padding: 45px 0 35px 0;
+    }
+    .short_line {
+        margin: auto 0;
+        width: 20%;
+    }
+    .namber {
+        font-size: 20px;
+        font-family: kozuka-gothic-pr6n, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.03em;
+    }
+    .work_header_category {
+        font-size: 20px;
+        letter-spacing: 0.03em;
+    }
+
+    .top_img {
+        display: none;
+    }
+
+    header {
+        padding-top: 35px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .line {
+        top: 133px;
+        column-gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        /* width: 44px;
+      height: 8px;
+      position: absolute;
+      top: 69px;
+      right: 40px;
+      cursor: pointer;
+      z-index: 9999; */
+    }
+
+    .header-nav-sp {
+        /* position: absolute;
+      background-color: #e6dfdfc4;
+      width: 100%;
+      height: 100vh;
+      z-index: 9998; */
+        position: fixed;
+        width: 100%;
+        height: 65vh;
+        z-index: 9998;
+        top: 0;
+        left: 0;
+    }
+
+    .header-nav-sp ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+        padding-top: 140px;
+        position: relative;
+        z-index: 9998;
+    }
+
+    .header-nav-sp li {
+        color: #1c1a3a;
+        letter-spacing: 0.03em;
+        font-family: "Minion Variable", serif;
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    .nav-hamburger__svg {
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        fill: #e6dfdfc4;
+        z-index: 9997;
+    }
+
+    .nav-hamburger__path {
+        fill: #e6dfdfc4;
+    }
+
+    .trigger {
+        position: fixed;
+        top: 64px;
+        right: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .trigger .wave {
+        display: block;
+        width: 37px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .trigger .wave__bar:first-child {
+        width: 100%;
+    }
+    .trigger .wave__bar {
+        display: block;
+        height: 4px;
+        position: relative;
+        overflow: hidden;
+    }
+    .trigger .wave svg {
+        width: 282px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .trigger .wave__bar:nth-child(2) {
+        margin: 4px 0 0 auto;
+    }
+
+    .trigger:hover .wave__svg {
+        animation: waveMatrix 5s linear infinite;
+    }
+
+    @keyframes waveMatrix {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0); /* 初期位置 */
+        }
+        100% {
+            transform: matrix(1, 0, 0, 1, 200, 0); /* 右に移動 */
+        }
+    }
+
+    /* kadai */
+    .kadai img {
+        width: 65%;
+    }
+    .kadai01 {
+        margin-top: 50px;
+    }
+    .explanation {
+        position: static;
+        margin: 15% 0 15% 15%;
+    }
+
+    /* contact */
+    .contact_box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        height: auto;
+        /* background: linear-gradient(to bottom, #65a7bc, #97adaa, #ebe6e0); */
+    }
+    .contact_box_title {
+        position: static;
+        top: 0;
+        padding-left: 0;
+        margin-top: 56px;
+        padding-bottom: 27px;
+    }
+    .contact {
+        font-size: 20px;
+        font-family: "Minion Variable", serif;
+        letter-spacing: 0.03em;
+        color: #ddd;
+        margin-left: 5%;
+    }
+    .over_line {
+        width: 130px;
+        margin-left: 0;
+    }
+    .contact_detail {
+        margin: 0;
+        width: 62%;
+        font-size: 14px;
+        font-family: dnp-shuei-gothic-kin-std, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2.42;
+        letter-spacing: 0.05em;
+        margin-bottom: 25px;
+        margin-left: 5%;
+    }
+    .contact_button_bottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 30%;
+    }
+    .contact_button_area {
+        max-width: 687px;
+        width: 100%;
+        height: 52px;
+        line-height: 105px;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        justify-content: center;
+        column-gap: 33%;
+        margin-bottom: 70px;
+    }
+    .contact_button {
+        font-size: 14px;
+        font-family: dnp-shuei-gothic-kin-std, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.1em;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+    .footer__inner {
+        padding-left: 10%;
+    }
+    .footer_menu {
+        display: none;
+    }
+    .sns-icon {
+        text-align: left;
+        padding-bottom: 35px;
+    }
+    .sns-icon-img {
+        display: none;
+    }
+    .footer_name-en {
+        font-size: 18px;
+    }
+    .footer_name-kanji {
+        font-size: 13px;
+    }
+    .footer__info {
+        padding-bottom: 35px;
+    }
 }

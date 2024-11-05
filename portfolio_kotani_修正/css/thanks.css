@@ -80,6 +80,7 @@ header {
     background-image: url(../images/thankspage_nami.jpg);
     background-size: 320px auto;
     transform: translateY(1px);
+    animation: wave 3s infinite linear;
 }
 .thanks-wave-bottom {
     position: relative;
@@ -88,6 +89,15 @@ header {
     background-image: url(../images/thankspage_nami.jpg);
     background-size: 320px auto;
     transform: rotate(180deg) translateY(1px);
+    animation: wave 3s infinite linear;
+}
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 320px 0;
+    }
 }
 .thanks {
     font-size: 100px;
@@ -167,11 +177,131 @@ footer
     color: #1c1a3a;
 }
 
+.hamburger,
+.header-nav-sp,
 .footer-sp {
     display: none;
 }
 
 @media screen and (max-width: 767px) {
+    header {
+        padding-top: 35px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .line {
+        top: 133px;
+        column-gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        /* width: 44px;
+        height: 8px;
+        position: absolute;
+        top: 69px;
+        right: 40px;
+        cursor: pointer;
+        z-index: 9999; */
+    }
+
+    .header-nav-sp {
+        /* position: absolute;
+        background-color: #e6dfdfc4;
+        width: 100%;
+        height: 100vh;
+        z-index: 9998; */
+        position: fixed;
+        width: 100%;
+        height: 65vh;
+        z-index: 9998;
+        top: 0;
+        left: 0;
+    }
+
+    .header-nav-sp ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+        padding-top: 140px;
+        position: relative;
+        z-index: 9998;
+    }
+
+    .header-nav-sp li {
+        color: #1c1a3a;
+        letter-spacing: 0.03em;
+        font-family: "Minion Variable", serif;
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    .nav-hamburger__svg {
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        fill: #e6dfdfc4;
+        z-index: 9997;
+    }
+
+    .nav-hamburger__path {
+        fill: #e6dfdfc4;
+    }
+
+    .trigger {
+        position: fixed;
+        top: 64px;
+        right: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .trigger .wave {
+        display: block;
+        width: 37px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .trigger .wave__bar:first-child {
+        width: 100%;
+    }
+    .trigger .wave__bar {
+        display: block;
+        height: 4px;
+        position: relative;
+        overflow: hidden;
+    }
+    .trigger .wave svg {
+        width: 282px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .trigger .wave__bar:nth-child(2) {
+        margin: 4px 0 0 auto;
+    }
+
+    .trigger:hover .wave__svg {
+        animation: waveMatrix 5s linear infinite;
+    }
+
+    @keyframes waveMatrix {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0); /* 初期位置 */
+        }
+        100% {
+            transform: matrix(1, 0, 0, 1, 200, 0); /* 右に移動 */
+        }
+    }
+
     .contact_header {
         padding: 81px 0 37px;
     }
