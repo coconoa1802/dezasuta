@@ -20,7 +20,13 @@ $(function () {
     slidesToShow: 2,
     centerMode: true,
     centerPadding: "10%",
-    arrows: false
+    arrows: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1
+      }
+  }]
   });
 });
 
