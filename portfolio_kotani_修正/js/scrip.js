@@ -149,14 +149,14 @@ stroke = new Vivus('mask', {//アニメーションをするIDの指定
 
 
 //同じ日付で2回目以降ならローディング画面非表示の設定
+$(window).on('load',function(){
 
-var splash_text = $.cookie('accessdate'); //キーが入っていれば年月日を取得
 var myD = new Date();//日付データを取得
 var myYear = String(myD.getFullYear());//年
 var myMonth = String(myD.getMonth() + 1);//月
 var myDate = String(myD.getDate());//日
+var splash_text = $.cookie('accessdate'); //キーが入っていれば年月日を取得
 
-$(window).on('load',function(){
 if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
   stroke.play();//SVGアニメーションの実行
     $("#splash").delay(2500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
