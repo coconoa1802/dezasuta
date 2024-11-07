@@ -1,4 +1,46 @@
 @charset "UTF-8";
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #c7d0d5;
+    text-align: center;
+    color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo svg {
+    width: auto;
+    height: 5vh;
+}
+
+/*========= SVG操作手書き風にするためのCSS ===============*/
+
+#mask .st0 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 90; /*線の太さを指定する*/
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1500; /* 線の間隔を指定する */
+    stroke-dashoffset: 1500; /* 線の位置を指定する */
+}
+
 /* ==========
 共通
 ========== */
@@ -105,8 +147,8 @@ header {
 .scrolldown1 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
-    left: 5%;
-    top: 50%;
+    left: 3%;
+    top: 90%;
     /*全体の高さ*/
     height: 50px;
 }
@@ -156,6 +198,17 @@ header {
         top: 100px;
         opacity: 0;
     }
+}
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ==========
@@ -253,7 +306,7 @@ profile
 }
 .more-img {
     margin-top: 10px;
-    width: 70px;
+    width: 50px;
 }
 
 /* ==========
@@ -493,6 +546,11 @@ footer
 }
 
 @media screen and (max-width: 767px) {
+    #splash_logo svg {
+        width: auto;
+        height: 3vh;
+    }
+
     /* 共通 */
     .title_icons {
         display: none;
@@ -679,7 +737,7 @@ footer
         font-style: normal;
         line-height: 2.14;
         letter-spacing: 0.1em;
-        margin-left: 10%;
+        margin: 0 10%;
         padding-top: 62px;
     }
 
@@ -759,7 +817,7 @@ footer
         width: 85%;
     }
     .skill_pic {
-        width: auto;
+        width: 100%;
     }
     .skill_en {
         font-size: 18px;
@@ -792,7 +850,7 @@ footer
         padding: 35px 0 55px 0;
     }
     .works_contents-sp {
-        padding: 0 90px;
+        padding: 0 50px;
     }
 
     .works_category-sp {
@@ -886,5 +944,14 @@ footer
     .footer_name-sp p,
     .copyright-sp {
         color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .works_gradationbox-sp {
+        height: 780px;
+    }
+    .works_contents-sp {
+        padding: 0 30px;
     }
 }

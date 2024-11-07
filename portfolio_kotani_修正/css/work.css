@@ -132,6 +132,28 @@ header {
     font-style: normal;
     letter-spacing: 0.03em;
 }
+
+.starry-sky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
+
 .work_header_category {
     font-size: 30px;
     letter-spacing: 0.03em;
@@ -282,9 +304,26 @@ works
     z-index: 1;
 }
 
-.works_contents_item:nth-child(even) {
+/* .works_contents_item:nth-child(even) {
+    margin-top: 150px;
+} */
+
+.odd-item {
+    margin-top: 0;
+}
+.even-item {
     margin-top: 150px;
 }
+.even-item .works_category,
+.even-item .works_name {
+    color: #ffffff;
+    width: 60vw;
+}
+
+.single-item {
+    display: block;
+}
+
 .works_category {
     color: #1c1a3a;
     font-size: 14px;
@@ -295,7 +334,7 @@ works
     letter-spacing: 0.1em;
     margin-top: 25px;
 }
-.works_category_white {
+/* .works_category_white {
     color: #ffffff;
     font-size: 14px;
     font-family: brother-1816-printed, sans-serif;
@@ -304,7 +343,7 @@ works
     line-height: 3.58;
     letter-spacing: 0.1em;
     margin-top: 25px;
-}
+} */
 .works_name {
     color: #1c1a3a;
     font-size: 16px;
@@ -314,7 +353,8 @@ works
     line-height: 2.68;
     letter-spacing: 0.1em;
 }
-.works_name_white {
+
+/* .works_name_white {
     color: #ffffff;
     font-size: 16px;
     font-family: dnp-shuei-gothic-kin-std, sans-serif;
@@ -322,7 +362,7 @@ works
     font-style: normal;
     line-height: 2.68;
     letter-spacing: 0.1em;
-}
+} */
 
 /* ==========
 contact

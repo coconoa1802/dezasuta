@@ -60,7 +60,7 @@ header {
     left: 10px;
     top: 5px;
     /*テキストの形状*/
-    color: #1c144d;
+    color: #1c1a3a;
     font-size: 0.875rem;
     letter-spacing: 0.05em;
     writing-mode: vertical-rl;
@@ -76,7 +76,7 @@ header {
     /*線の形状*/
     width: 1px;
     height: 30px;
-    background: #1c144d;
+    background: #1c1a3a;
     /*線の動き1.4秒かけて動く。永遠にループ*/
     animation: pathmove 2s ease-in-out infinite;
     opacity: 0;
@@ -603,5 +603,19 @@ footer
     }
     .footer__info {
         padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .scrolldown1 span {
+        color: #1c1a3a;
+    }
+
+    /* 線の描写 */
+    .scrolldown1::after {
+        background: #1c1a3a;
+    }
+    .scrolldown1 {
+        top: 30%;
     }
 }

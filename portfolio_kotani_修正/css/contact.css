@@ -44,63 +44,6 @@ header {
     letter-spacing: 0.03em;
 }
 
-/*スクロールダウン全体の場所*/
-.scrolldown1 {
-    /*描画位置※位置は適宜調整してください*/
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    /*全体の高さ*/
-    height: 50px;
-}
-
-/*Scrollテキストの描写*/
-.scrolldown1 span {
-    /*描画位置*/
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    /*テキストの形状*/
-    color: #1c144d;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
-    writing-mode: vertical-rl;
-    font-family: "Minion Variable", serif;
-}
-
-/* 線の描写 */
-.scrolldown1::after {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    top: 0;
-    /*線の形状*/
-    width: 1px;
-    height: 30px;
-    background: #1c144d;
-    /*線の動き1.4秒かけて動く。永遠にループ*/
-    animation: pathmove 2s ease-in-out infinite;
-    opacity: 0;
-}
-
-/*高さ・位置・透過が変化して線が上から下に動く*/
-@keyframes pathmove {
-    0% {
-        height: 0;
-        top: 0;
-        opacity: 0;
-    }
-    30% {
-        height: 100px;
-        opacity: 1;
-    }
-    100% {
-        height: 0;
-        top: 100px;
-        opacity: 0;
-    }
-}
-
 .contact_header {
     display: flex;
     gap: 15px;
@@ -129,6 +72,7 @@ header {
     font-style: normal;
     line-height: 2.588;
     margin-left: calc(13% + 15px);
+    margin-right: 50px;
 }
 .contact_message span {
     color: #ff0000;
@@ -178,12 +122,12 @@ header {
 }
 .answer-box {
     border: 1px solid #b8b8b8;
-    width: 74%;
+    width: 90%;
     height: 60px;
 }
 .answer-bigbox {
     border: 1px solid #b8b8b8;
-    width: 74%;
+    width: 90%;
     height: 150px;
 }
 .gradation_box {
@@ -201,7 +145,7 @@ header {
     height: auto;
 }
 .form-button {
-    width: 68%;
+    width: 90%;
     display: flex;
     justify-content: center;
     margin: 30px 0;
@@ -424,6 +368,16 @@ footer
         }
     }
 
+    .question_items_number {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .tel-namber {
+        margin: 0;
+    }
+
     .contact_header {
         padding: 81px 0 37px;
     }
@@ -459,10 +413,6 @@ footer
 
     .question {
         margin-top: 65px;
-    }
-    .form-button {
-        width: 100%;
-        justify-content: left;
     }
     .send-box {
         width: 74%;
@@ -520,5 +470,18 @@ footer
     .footer_name-sp p,
     .copyright-sp {
         color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact_message-sp {
+        margin-left: 20px;
+        margin-right: 30px;
+        width: 80%;
+    }
+    .form-container {
+        margin-left: 20px;
+        margin-right: 30px;
+        width: 100%;
     }
 }
